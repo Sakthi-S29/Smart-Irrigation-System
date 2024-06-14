@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ### Connections on NodeMCU:\
+\
+1. **Soil Moisture Sensor**:\
+   - Connect the VCC pin of the sensor to the 3.3V pin of the NodeMCU.\
+   - Connect the GND pin of the sensor to the GND pin of the NodeMCU.\
+   - Connect the signal pin of the sensor to any digital pin of the NodeMCU (e.g., D0).\
+\
+2. **TDS Sensor**:\
+   - Connect the VCC pin of the sensor to the 3.3V pin of the NodeMCU.\
+   - Connect the GND pin of the sensor to the GND pin of the NodeMCU.\
+   - Connect the signal pin of the sensor to any analog pin of the NodeMCU (e.g., A0).\
+\
+3. **DHT11 Sensor**:\
+   - Connect the VCC pin of the sensor to the 3.3V pin of the NodeMCU.\
+   - Connect the GND pin of the sensor to the GND pin of the NodeMCU.\
+   - Connect the signal pin of the sensor to any digital pin of the NodeMCU (e.g., D5).\
+\
+### Wireless Transmission:\
+\
+- For wireless transmission, you can use any wireless communication protocol supported by both the NodeMCU and Raspberry Pi 4. Common options include Wi-Fi, Bluetooth, and LoRa.\
+- Since Wi-Fi is widely supported and provides a good range, you can use it for wireless communication.\
+- Ensure that both the NodeMCU and Raspberry Pi 4 are connected to the same Wi-Fi network.\
+- Use a protocol such as MQTT or HTTP to transmit data from the NodeMCU to the Raspberry Pi 4.\
+- In your Python script running on the Raspberry Pi 4, you can listen for incoming data on the Wi-Fi network and process it accordingly.\
+\
+### Additional Considerations:\
+\
+- Make sure to install necessary libraries and dependencies for reading sensor data and transmitting it wirelessly on both the NodeMCU and Raspberry Pi 4.\
+- Double-check the pin connections and ensure that they match the pins specified in your code.\
+- Test the sensor connections and wireless transmission to ensure everything is working as expected before deploying your system in the field.}
